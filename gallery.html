@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - Saveetha College</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        #branding {
+            float: left;
+        }
+        #branding img {
+            width: 50px;
+            height: auto;
+            vertical-align: middle;
+        }
+        #branding h1 {
+            display: inline;
+            vertical-align: middle;
+        }
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        main h2 {
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="logo.png" alt="College Logo">
+                <h1>Saveetha College</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="i1.jpg" alt="Gallery Image 1">
+            <img src="i2.jpg" alt="Gallery Image 2">
+            <img src="i3.jpg" alt="Gallery Image 3">
+        </div>
+        <img src="i4.jpg" alt="Gallery Image 4">
+        <img src="i5.jpg" alt="Gallery Image 5">
+        <img src="i6.jpg" alt="Gallery Image 6">
+    </main>
+</body>
+</html>

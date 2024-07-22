@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - ABC College</title>
+    <style>
+         body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        #branding {
+            float: left;
+        }
+        #branding img {
+            width: 50px;
+            height: auto;
+            vertical-align: middle;
+            
+        }
+        #branding h1 {
+           
+            display: inline;
+            vertical-align: middle;
+        }
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+        form {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        input, select {
+            width: calc(100% - 120px);
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container">
+                <div id="branding">
+                    <img src="logo.png" alt="College Logo">
+                    <h1>Saveetha College</h1>
+                </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container content">
+        <h2>Admission Form</h2>
+        <form action="submit-admission" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="arts">Arts</option>
+                <option value="science">Science</option>
+                <option value="commerce">Commerce</option>
+            </select><br>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="computer-science">Computer Science</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="english">English</option>
+                <option value="sociology">Sociology</option>
+                <option value="economics">Economics</option>
+                <option value="business-management">Business Management</option>
+            </select><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
